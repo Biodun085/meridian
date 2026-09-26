@@ -18,3 +18,7 @@ import { getSdkInfo } from "@meridian/sdk";
 
 console.log(getSdkInfo());
 ```
+
+`getSdkInfo()` is exported from the package root, so consumers do not need to
+import from a build-specific path. The generated ESM, CommonJS, and declaration
+files are included in the published package.
